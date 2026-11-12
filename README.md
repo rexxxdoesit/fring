@@ -16,7 +16,9 @@ Optional: add copy to the directory page by editing `$intro` in members.php. It 
 Add all members of web ring. Use lowercase letters, numbers and hyphens, with at least one letter.
 They will need a unique ID, a display name and a URL:
 
+```
 'robin' => ['name' => 'Robin', 'url' => 'https://example.com/'],
+```
 
 This is the core list of directory members for both the directory and the arrow links, and it must be maintained manually. 
 
@@ -32,6 +34,7 @@ embed has its own (ring.css) to provide a default embed style for your members.
 3. Have ring members paste this HTML anywhere on their page.
 Replace fring.yourdomain.com with your address and membername with that memberâ€™s ID from members.php.
 
+```
 <link rel="stylesheet" href="https://fring.yourdomain.com/ring.css">
 <nav class="ring" aria-label="Fring webring">
   <a class="prev" href="https://fring.yourdomain.com/?id=membername&amp;go=prev">
@@ -44,6 +47,7 @@ Replace fring.yourdomain.com with your address and membername with that memberâ€
     <img src="https://fring.yourdomain.com/img/arrow.svg" alt="Next site">
   </a>
 </nav>
+```
 
 # Styling
 
@@ -51,6 +55,7 @@ To customize the member-side embed, edit the values in an inline style
 block between the CSS link and the html for the embed block.
 
 CSS variable code example:
+```
 <style>
 .ring {
   --ring-bg: #999999; // the embed back block background color 
@@ -67,6 +72,7 @@ CSS variable code example:
   scale: 1.1; // the new scale hover animation
 }
 </style>
+```
 
 The hover for the embed can be reset by adding opacity:1; and can be modified to any of the following CSS animations:
 Grow / example: scale: 1.25;
