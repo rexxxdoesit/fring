@@ -75,10 +75,10 @@ CSS variable code example:
 ```
 
 The hover for the embed can be reset by adding opacity:1; and can be modified to any of the following CSS animations:
-Grow / example: scale: 1.25;
-Move / example: translate: 0 -2px;
-Rotate / example: rotate: 10deg;
-Colour / example: filter: invert(1);
+- Grow / example: scale: 1.25;
+- Move / example: translate: 0 -2px;
+- Rotate / example: rotate: 10deg;
+- Colour / example: filter: invert(1);
 
 The embed's logo is pulled from the Fring server by default but can overridden by changing the URL to a local file.
 A best practice is to have a version of your default logo in both black and white for dark and light embeds.
