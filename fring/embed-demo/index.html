@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Fring embed demo</title>
+
+
+<link rel="stylesheet" href="https://fring.rexxxdoesit.com/ring.css">
+
+<style>
+html{
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #d9d;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Black Embed variant style */
+.black {
+  --ring-bg: #000;
+  --ring-border: #fff 1px solid;
+}
+
+/* Custom Embed variant style example (includes custom hover animation) */
+.custom {
+  --ring-bg: #407;
+  --ring-border: none;
+  --ring-height: 40px;
+  --ring-pad: 24px;
+}
+.custom a {
+  transition: scale .15s;
+  
+}
+.custom a:hover,
+.custom a:focus-visible {
+  scale: 1.1;
+  opacity: 1;
+}
+</style>
+
+<p>fixed</p>
+
+<!-- Standard Width Embed -->
+<nav class="ring" aria-label="Fring webring">
+  <a class="prev" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=prev">
+    <img src="https://fring.rexxxdoesit.com/img/arrow.svg" alt="Previous site">
+  </a>
+  <a class="dir" href="https://fring.rexxxdoesit.com/">
+    <img src="https://fring.rexxxdoesit.com/img/dir.png" alt="Directory">
+  </a>
+  <a class="next" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=next">
+    <img src="https://fring.rexxxdoesit.com/img/arrow.svg" alt="Next site">
+  </a>
+</nav>
+
+<!--  Reversed Standard Width Embed -->
+<nav class="ring black" aria-label="Fring webring">
+  <a class="prev" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=prev">
+  <img src="https://fring.rexxxdoesit.com/img/arrow-white.svg" alt="Previous site">
+  </a>
+  <a class="dir" href="https://fring.rexxxdoesit.com/">
+    <img src="https://fring.rexxxdoesit.com/img/dir-white.svg" alt="Directory">
+  </a>
+  <a class="next" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=next">
+    <img src="https://fring.rexxxdoesit.com/img/arrow-white.svg" alt="Next site">
+  </a>
+</nav>
+
+<p>fluid</p>
+
+<!-- Full Width Embed -->
+<nav class="ring ring-full" aria-label="Fring webring">
+  <a class="prev" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=prev">
+  <img src="https://fring.rexxxdoesit.com/img/arrow.svg" alt="Previous site">
+  </a>
+  <a class="dir" href="https://fring.rexxxdoesit.com/"><img src="https://fring.rexxxdoesit.com/img/dir.png" alt="Directory"></a>
+    <a class="next" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=next">
+    <img src="https://fring.rexxxdoesit.com/img/arrow.svg" alt="Next site">
+  </a>
+</nav>
+
+<!-- Black Full Width Embed -->
+<nav class="ring black ring-full" aria-label="Fring webring">
+  <a class="prev" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=prev">
+  <img src="https://fring.rexxxdoesit.com/img/arrow-white.svg" alt="Previous site">
+  </a>
+  <a class="dir" href="https://fring.rexxxdoesit.com/"><img src="https://fring.rexxxdoesit.com/img/dir-white.png" alt="Directory"></a>
+    <a class="next" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=next">
+    <img src="https://fring.rexxxdoesit.com/img/arrow-white.svg" alt="Next site">
+  </a>
+</nav>
+
+<p>Customized Example</p>
+
+<nav class="ring custom" aria-label="Fring webring">
+  <a class="prev" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=prev">
+    <img src="arrow-custom.png" alt="Previous site">
+  </a>
+  <a class="dir" href="https://fring.rexxxdoesit.com/">
+    <img src="dir-custom.svg" alt="Directory">
+  </a>
+  <a class="next" href="https://fring.rexxxdoesit.com/?id=rexxx&amp;go=next">
+    <img src="arrow-custom.png" alt="Next site">
+  </a>
+</nav>

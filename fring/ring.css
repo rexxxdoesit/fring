@@ -1,0 +1,44 @@
+.ring {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 24px;
+  width: max-content;
+  max-width: 100%;
+  margin: auto;
+  padding: var(--ring-pad, 12px);
+  background: var(--ring-bg, #fff);
+  border: var(--ring-border, 1px solid #000);
+}
+
+.ring-full {
+  width: 100%;
+}
+
+.ring a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring a:hover,
+.ring a:focus-visible {
+  opacity: .6;
+}
+
+.ring img {
+  height: var(--ring-height, 40px);
+  width: auto;
+}
+
+.ring .prev img {
+  transform: scaleX(-1);
+}
+
+.ring .prev {
+  justify-self: start;
+}
+
+.ring .next {
+  justify-self: end;
+}
