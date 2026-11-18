@@ -21,9 +21,14 @@ if ($at !== false && ($go === 'prev' || $go === 'next')) {
 <title><?= htmlspecialchars($title) ?></title>
 <link rel="stylesheet" href="dir.css">
 <h1><?= htmlspecialchars($title) ?></h1>
+
+<!-- Header -->
 <?php if (!empty($intro)): ?>
 <div class="intro"><?= $intro ?></div>
 <?php endif; ?>
+
+
+<!-- Member List -->
 <ul class="members">
 	<?php foreach ($members as $id => $member): ?>
 	<li>
